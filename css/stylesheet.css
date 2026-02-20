@@ -8734,7 +8734,8 @@ fieldset:disabled .btn {
     margin-bottom: 1rem !important;
   }
   .mb-xl-4 {
-    margin-bottom: 1.5rem !important;
+      margin-top: 1em !important;
+    /* margin-bottom: 1.5rem !important; */
   }
   .mb-xl-5 {
     margin-bottom: 3rem !important;
@@ -19484,7 +19485,7 @@ section {
   float: left;
   width: 100%;
   overflow: hidden;
-  padding: 50px 0;
+  padding: 0px 0;
 }
 .theme-color {
   color: var(--theme-color);
@@ -19501,14 +19502,14 @@ section {
 .section-title .h1,
 .section-title h1 {
   font-size: 32px;
-  color: #111;
+  color: #ffffff;
 }
 .section-title .h1 span,
 .section-title h1 span {
   font-weight: 300;
 }
 .gray-bg {
-  background: #f5f5f5;
+  background: linear-gradient(135deg, #1e5b80 0%, #1e5b80 100%);
 }
 .upr {
   position: relative;
@@ -20111,8 +20112,7 @@ textarea.form-control {
   flex-direction: column;
 }
 #our_services {
-  background: url(../images/social_bg.png) repeat-x center center / contain
-    #f5f5f5;
+ 
 }
 .servics_bx {
   border-radius: 15px;

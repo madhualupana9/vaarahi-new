@@ -1,13 +1,16 @@
 <?php 
-
+header('Content-Type: text/html; charset=utf-8');
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 $siteurl = $protocol . $_SERVER['HTTP_HOST'] . "/"; 
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<meta charset="UTF-8">
+
        <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -17,7 +20,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
     <!-- Basic Meta Tags -->
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -181,7 +183,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- CSS and JS Resources -->
     <link rel="stylesheet" href="<?php echo $siteurl; ?>css/stylesheet.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <script src="<?php echo $siteurl; ?>js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -575,8 +578,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       #header .menus_btns li a.readmore {
         padding: 0 40px;
       }
-    </style>
-    <style>
+    
       .healths .container.bg-hero-banner.bg-hero-banner-moblie {
         max-width: auto;
         border-radius: 20px;
@@ -779,7 +781,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .section-title {
         font-size: 2.5rem;
         font-weight: 700;
-        color: #2c3e50;
+        color: #ffffff;
         margin-bottom: 1rem;
       }
 
@@ -1600,7 +1602,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 0;
 }
 
@@ -2006,7 +2008,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 
 .best-seller-section {
-  background: #cfe0dc;
+  background: linear-gradient(135deg, #1e5b80 0%, #1e5b80 100%);
   padding: 15px 0;
 }
 
@@ -2045,8 +2047,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 
 .product-card h4 {
-  margin-bottom: 15px;
+  min-height: 50px;           /* same space for title */
+  margin-bottom: 10px;
   font-weight: 600;
+}
+
+/* push price row to bottom */
+.product-card .price-row {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* optional: prevent long title breaking layout */
+.product-card h4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /* max 2 lines */
+  -webkit-box-orient: vertical;
 }
 
 /* ===== BADGE ===== */
@@ -2142,6 +2161,289 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   background: #28a745 !important;
   color: white !important;
 } 
+
+/* ===== Sticky Button ===== */
+#stickyContactBtn{
+
+}
+
+#stickyContactBtn:hover{
+  transform: translateY(-3px);
+}
+
+/* ===== Popup Background ===== */
+#stickyContactForm{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.4);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:99999;
+}
+
+/* ===== Form Box ===== */
+.form-box{
+  background:#fff;
+  padding:30px;
+  border-radius:20px;
+  width:320px;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp{
+  from{transform:translateY(40px);opacity:0}
+  to{transform:translateY(0);opacity:1}
+}
+
+/* ===== Header ===== */
+.form-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.form-header h3{
+  margin:0;
+}
+
+#closeForm{
+  cursor:pointer;
+  font-size:20px;
+}
+
+/* ===== Inputs ===== */
+.form-box input{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border-radius:12px;
+  border:1px solid #ddd;
+}
+
+/* ===== Button ===== */
+.form-box button{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:#0e5e81;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.bullets li {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.bullets .icon {
+  font-size: 24px;
+  color: #1f5d75; /* your theme color */
+  margin-top: 5px;
+}
+
+
+/* Image wrapper */
+.about_img figure {
+  position: relative;
+  margin: 0;
+}
+
+/* Curved image */
+.about_img img {
+  border-radius: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Decorative frame behind image */
+.about_img figure::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 8px solid #1f5d75; /* your theme color */
+  border-radius: 25px;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+}
+
+.btn-loader {
+  width:18px;
+  height:18px;
+  border:3px solid #fff;
+  border-top:3px solid transparent;
+  border-radius:50%;
+  display:inline-block;
+  animation: spin 0.6s linear infinite;
+  margin-left:8px;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.best-seller-slider .product-card {
+  height: 100%;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Membership Banner */
+.membership-banner {
+  padding: 20px 0;
+}
+
+.membership-banner img {
+  width: 100%;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+/* Desktop image */
+.banner-desktop {
+  height: 250px;
+  display: none;
+}
+
+/* Mobile image */
+.banner-mobile {
+  height: 180px;
+}
+
+/* Desktop view */
+@media (min-width: 1200px) {
+  .banner-desktop {
+    display: block;
+  }
+
+  .banner-mobile {
+    display: none;
+  }
+}
+
+.health-checkups {
+  background: #f7f9fc;
+}
+
+.health-card {
+  border: 2px solid #bbb7e5;
+  transition: 0.3s ease;
+}
+
+.health-card:hover {
+  transform: scale(1.05);
+  border: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.health-checkups .btn.active {
+  background: #0e5e81;
+  color: white;
+}
+
+/* SECTION BACKGROUND */
+.health-checkups {
+  background: #f5f7fb;
+}
+
+/* FILTER BUTTONS */
+.filter-btn {
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 8px 18px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: white;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background: #0e5e81;
+  color: white;
+}
+
+.filter-btn.active {
+  background: #0e5e81;
+  color: white;
+}
+
+/* CARD STYLE */
+.health-card {
+  border-radius: 16px;
+  padding: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.health-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* PACKAGE BADGE */
+.package-badge {
+  background: #e7f1ff;
+  color: #0e5e81;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+/* PRICE BOX */
+.price-box {
+  background: linear-gradient(135deg,#f8fbff,#eef5ff);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.price-box del {
+  color: #999;
+  font-size: 14px;
+}
+
+.price-box h4 {
+  margin: 0;
+  color: #0e5e81;
+  font-weight: 700;
+}
+
+.price-box span {
+  font-size: 13px;
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* BOOK BUTTON */
+.book-btn {
+  background: #0e5e81;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.book-btn:hover {
+  background: #0e5e81;
+  color: white;
+}
   </style>
 <!-- new design styles end -->
 
@@ -2150,16 +2452,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="swiper">
     <div class="swiper-wrapper">
 
+      <!-- Slide 1 -->
       <div class="swiper-slide">
-        <img src="https://mryoda-prod.s3.ap-south-1.amazonaws.com/web/diagnostics_hero_banner_04.webp-1757926190539">
+        <picture>
+          <!-- Mobile image -->
+          <source 
+            media="(max-width:768px)" 
+            srcset="https://mryoda-prod.s3.ap-south-1.amazonaws.com/web/diagnostics_hero_banner_04.webp-1757926190539"
+          >
+
+          <!-- Desktop image -->
+          <img src="images/banner/5.jpg"
+               class="img-fluid"
+               alt="Banner">
+        </picture>
       </div>
 
+      <!-- Slide 2 -->
       <div class="swiper-slide">
-        <img src="https://mryoda-prod.s3.ap-south-1.amazonaws.com/web/autism-banner-web.webp-1764064007095">
+        <picture>
+          <source 
+            media="(max-width:768px)" 
+            srcset="https://mryoda-prod.s3.ap-south-1.amazonaws.com/web/diagnostics_hero_banner_04.webp-1757926190539"
+          >
+
+          <img src="images/banner/6.jpg"
+               class="img-fluid"
+               alt="Banner">
+        </picture>
       </div>
 
+      <!-- Slide 3 -->
       <div class="swiper-slide">
-        <img src="https://mryoda-prod.s3.ap-south-1.amazonaws.com/web/diagnostics-fever-checks-web.webp-1765113676609">
+        <picture>
+          <source 
+            media="(max-width:768px)" 
+            srcset="https://mryoda-prod.s3.ap-south-1.amazonaws.com/web/diagnostics_hero_banner_04.webp-1757926190539"
+          >
+
+          <img src="images/banner/7.jpg"
+               class="img-fluid"
+               alt="Banner">
+        </picture>
       </div>
 
     </div>
@@ -2169,6 +2503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="swiper-pagination"></div>
   </div>
 </section>
+
 
 <section class="offer-section">
   <div class="container">
@@ -2212,12 +2547,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 1 -->
 <div class="product-card">
   <h4>Complete Blood Picture (CBP)</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹300</h5>
+    <h5>&#8377;300</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="Complete Blood Picture">Book Now</button>
     </div>
   </div>
 </div>
@@ -2225,12 +2559,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 2 -->
 <div class="product-card">
   <h4>Ultrasound</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹1000</h5>
+    <h5>&#8377;1000</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="Ultrasound">Book Now</button>
     </div>
   </div>
 </div>
@@ -2238,12 +2571,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 3 -->
 <div class="product-card">
   <h4>CT Scan</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹2500</h5>
+    <h5>&#8377;2500</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="CT Scan">Book Now</button>
     </div>
   </div>
 </div>
@@ -2251,12 +2583,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 4 -->
 <div class="product-card">
   <h4>Digital Mammography</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹3000</h5>
+    <h5>&#8377;3000</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="Digital Mammography">Book Now</button>
     </div>
   </div>
 </div>
@@ -2264,12 +2595,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 5-->
 <div class="product-card">
   <h4>Vitamin D</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹1500</h5>
+    <h5>&#8377;1500</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="Vitamin D">Book Now</button>
     </div>
   </div>
 </div>
@@ -2279,12 +2609,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 6 -->
 <div class="product-card">
   <h4>Lipid Profile</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹600</h5>
+    <h5>&#8377;600</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="Lipid Profile">Book Now</button>
     </div>
   </div>
 </div>
@@ -2292,12 +2621,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 7 -->
 <div class="product-card">
   <h4>Vitamin B12</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹900</h5>
+    <h5>&#8377;900</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="Vitamin B12">Book Now</button>
     </div>
   </div>
 </div>
@@ -2307,12 +2635,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 8 -->
 <div class="product-card">
   <h4>X-Ray</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹400</h5>
+    <h5>&#8377;400</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="X-Ray">Book Now</button>
     </div>
   </div>
 </div>
@@ -2320,25 +2647,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 9 -->
 <div class="product-card">
   <h4>LIVER FUNCTION TEST (LFT)</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹600</h5>
+    <h5>&#8377;600</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="LIVER FUNCTION TEST (LFT)">Book Now</button>
     </div>
   </div>
 </div>
 
 <!-- 10 -->
 <div class="product-card">
-  <h4>THYROID PROFILE (TFT)	</h4>
-  <p>Reports within : 24 Hours</p>
+  <h4>THYROID PROFILE (TFT)</h4>
   <div class="price-row">
-    <h5>₹500</h5>
+    <h5>&#8377;500</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="THYROID PROFILE (TFT)">Book Now</button>
     </div>
   </div>
 </div>
@@ -2346,12 +2671,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 11 -->
 <div class="product-card">
   <h4>TRIGLYCERIDES (1)</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹500</h5>
+    <h5>&#8377;500</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="TRIGLYCERIDES (1)">Book Now</button>
     </div>
   </div>
 </div>
@@ -2359,12 +2683,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 12 -->
 <div class="product-card">
   <h4>CANCER ANTIGEN</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹1000</h5>
+    <h5>&#8377;1000</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="CANCER ANTIGEN">Book Now</button>
     </div>
   </div>
 </div>
@@ -2372,12 +2695,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 13-->
 <div class="product-card">
   <h4>COMPLETE URINE EXAMINATION (CUE )</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹1000</h5>
+    <h5>&#8377;1000</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="COMPLETE URINE EXAMINATION (CUE )">Book Now</button>
     </div>
   </div>
 </div>
@@ -2385,12 +2707,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 14 -->
 <div class="product-card">
   <h4>COMPLETE URINE EXAMINATION (CUE )</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹200</h5>
+    <h5>&#8377;200</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="COMPLETE URINE EXAMINATION (CUE )">Book Now</button>
     </div>
   </div>
 </div>
@@ -2398,12 +2719,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 15 -->
 <div class="product-card">
   <h4>RENAL FUNCTION TEST (RFT)</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹900</h5>
+    <h5>&#8377;900</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="RENAL FUNCTION TEST (RFT)">Book Now</button>
     </div>
   </div>
 </div>
@@ -2411,12 +2731,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 16 -->
 <div class="product-card">
   <h4>RANDOM BLOOD SUGAR (Hexokinase)</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹80</h5>
+    <h5>&#8377;80</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="RANDOM BLOOD SUGAR (Hexokinase)">Book Now</button>
     </div>
   </div>
 </div>
@@ -2424,12 +2743,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 17 -->
 <div class="product-card">
   <h4>INSULIN RANDOM</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹750</h5>
+    <h5>&#8377;750</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="INSULIN RANDOM">Book Now</button>
     </div>
   </div>
 </div>
@@ -2439,12 +2757,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- 18 -->
 <div class="product-card">
   <h4>Digital Mammography</h4>
-  <p>Reports within : 24 Hours</p>
   <div class="price-row">
-    <h5>₹3000</h5>
+    <h5>&#8377;3000</h5>
     <div>
-      <button class="btn view-btn">View</button>
-      <button class="btn cart-btn">Book Now</button>
+      <!-- <button class="btn view-btn">View</button> -->
+      <button class="btn cart-btn" data-test="Digital Mammography">Book Now</button>
     </div>
   </div>
 </div>
@@ -2452,6 +2769,513 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
     </section>
+
+  <section class="health-checkups py-5">
+
+<div class="container">
+
+<!-- TITLE -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+<h2 class="fw-bold">Our Health Checkups</h2>
+<a href="#" class="btn btn-outline-primary d-lg-none">View More</a>
+</div>
+
+<!-- FILTER BUTTONS -->
+<div class="mb-4">
+
+<button class="btn filter-btn active" data-filter="preventive">
+Preventive Health Packages
+</button>
+
+<button class="btn filter-btn" data-filter="heart">
+Heart Health Checkup
+</button>
+
+<button class="btn filter-btn" data-filter="diabetic">
+Diabetic Checkup
+</button>
+
+<button class="btn filter-btn" data-filter="kidney">
+Kidney Health Package
+</button>
+
+<button class="btn filter-btn" data-filter="thyroid">
+Thyroid Checkup
+</button>
+
+</div>
+
+<!-- CARDS -->
+<div class="row g-4">
+
+<!-- CARD 1 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="preventive">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ESSENTIAL (11 TESTS, 69 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹5000</del>
+<h4>₹2499</h4>
+<span>50% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 2 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="preventive">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">MASTER (16 TESTS, 74 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+<li>Cardiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹11000</del>
+<h4>₹4499</h4>
+<span>59% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 3 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="preventive">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ADVANCED (20 TESTS, 78 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+<li>Cardiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹16000</del>
+<h4>₹6999</h4>
+<span>56% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 4 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="preventive">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">EXECUTIVE CHECKUP (25 TESTS, 84 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+<li>Cardiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹18000</del>
+<h4>₹8999</h4>
+<span>50% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+
+
+<!-- CARD 5 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="heart">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ESSENTIAL (9 TESTS, 38 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+<li>Cardiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹6000</del>
+<h4>₹3499</h4>
+<span>42% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- CARD 6 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="heart">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ADVANCED ( 14 TESTS, 45 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+<li>Cardiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹15000</del>
+<h4>₹7499</h4>
+<span>50% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 7 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="diabetic">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ESSENTIAL ( 6 TESTS, 35 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹2500</del>
+<h4>₹1199</h4>
+<span>52% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 8 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="diabetic">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ADVANCED ( 11 TESTS, 70 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹5000</del>
+<h4>₹2499</h4>
+<span>50% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 9 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="diabetic">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">TOTAL PACKAGE ( 13 TESTS, 72 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹7500</del>
+<h4>₹3999</h4>
+<span>47% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 10 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="kidney">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ESSENTIAL (7 TESTS, 28 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹5000</del>
+<h4>₹2499</h4>
+<span>50% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 11 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="kidney">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ADVANCED ( 10 TESTS,60 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹6000</del>
+<h4>₹3499</h4>
+<span>42% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 12 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="kidney">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">KIDNEY STONE ( 8 TESTS, 50 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹5000</del>
+<h4>₹2999</h4>
+<span>40% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 13 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="kidney">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ESSENTIAL ( 5 TESTS, 26 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹3500</del>
+<h4>₹1999</h4>
+<span>43% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 14 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="kidney">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">ADVANCED ( 8 TESTS, 29 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹6500</del>
+<h4>₹3499</h4>
+<span>46% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+<!-- CARD 15 -->
+<div class="col-md-6 col-lg-3 health-item" data-category="kidney">
+<div class="card health-card h-100 border-0">
+<div class="card-body d-flex flex-column">
+
+<span class="package-badge">Health Package</span>
+
+<h6 class="fw-bold mt-2">TOTAL PACKAGE ( 10 TESTS, 31 PARAMETERS)</h6>
+
+<div class="mt-3 mb-3 flex-grow-1">
+<p class="fw-semibold text-muted mb-1">Tests Included</p>
+<ul class="small ps-3 mb-0">
+<li>Pathology Tests</li>
+<li>Radiology Tests</li>
+</ul>
+</div>
+
+<div class="price-box">
+<del>₹9000</del>
+<h4>₹4999</h4>
+<span>44% OFF</span>
+</div>
+
+<button class="btn book-btn mt-3 w-100">Book Now</button>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+<!-- ===== Membership Banner ===== -->
+<section class="membership-banner">
+  <div class="container">
+    
+    <!-- Desktop Image -->
+    <img
+      src="images/banner/7.jpg"
+      alt="Membership Banner"
+      class="banner-desktop img-fluid"
+    />
+
+    <!-- Mobile Image -->
+    <img
+      src="images/banner/7.jpg"
+      alt="Membership Banner"
+      class="banner-mobile img-fluid"
+    />
+
+  </div>
+</section>
+
 
     
     <section id="about">
@@ -2484,21 +3308,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               Our mission is simple: to combine modern medical innovation with personalized human care, so you feel supported at every step of your health journey.
             <ul class="bullets">
               <li>
-                <span style="font-size: 1.5em;">⚡</span>
+                 <i class="fas fa-bolt icon"></i>
                 <p>
                   <strong> Advanced Diagnostics
                     We use the latest technology to deliver fast, highly accurate, and dependable results that empower better healthcare decisions.
                 </p>
               </li>
               <li>
-                <span style="font-size: 1.5em;">🏥</span>
+                <i class="fas fa-hospital icon"></i>
                 <p>
                   <strong> Next-Generation Laboratory
                     Our hi-tech lab is equipped with world-class diagnostic systems, designed to meet international standards of quality, safety, and excellence.
                 </p>
               </li>
               <li>
-                <span style="font-size: 1.5em;">💛</span>
+                 <i class="fas fa-heart icon"></i>
                 <p>
                   <strong> Compassionate Care
                     At Vaarahi, we treat every patient with empathy and respect, making your diagnostic journey smooth, stress-free, and supportive.
@@ -2608,7 +3432,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     >ECG & TMT</a
                   >
                 </div>
-                <p>Reliable cardiac monitoring that keeps track of your heart’s well-being.</p>
+                <p>Reliable cardiac monitoring that keeps track of your heart's well-being.</p>
                 <a
                   href="<?php echo $siteurl; ?>#book-a-test"
                   class="readmore small"
@@ -2722,8 +3546,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
+
    
 
+   
+<!-- ===== Membership Banner ===== -->
+<section class="membership-banner">
+  <div class="container">
+    
+    <!-- Desktop Image -->
+    <img
+      src="images/banner/5.jpg"
+      alt="Membership Banner"
+      class="banner-desktop img-fluid"
+    />
+
+    <!-- Mobile Image -->
+    <img
+      src="images/banner/5.jpg"
+      alt="Membership Banner"
+      class="banner-mobile img-fluid"
+    />
+
+  </div>
+</section>
 
    
 
@@ -2839,16 +3685,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="h1">Imaging</div>
             </div>
             <p>
-              Welcome to Vaarahi Diagnostics, At Vaarahi Diagnostics, we believe imaging is more than just a scan — it’s the window to clarity, precision, and confidence in your health journey. Located in the heart of Hyderabad, we bring you advanced diagnostic imaging services designed to deliver accurate answers when they matter most.
+              Welcome to Vaarahi Diagnostics, At Vaarahi Diagnostics, we believe imaging is more than just a scan it's the window to clarity, precision, and confidence in your health journey. Located in the heart of Hyderabad, we bring you advanced diagnostic imaging services designed to deliver accurate answers when they matter most.
             </p>
             <p>
               From Ultrasound to Mammography, X-Ray to Bone Mineral Density (BMD) testing, our wide range of services ensures that every aspect of your diagnostic needs is met under one roof. Each scan is backed by cutting-edge equipment, world-class standards, and the expertise of seasoned radiologists and technicians.
             </p>
             <p>
-              Step into our state-of-the-art imaging center, where technology meets compassionate care. Every detail — from high-resolution imaging to interventional diagnostic procedures — is tailored to provide you with results that are not only precise but also delivered with speed and reliability.
+              Step into our state-of-the-art imaging center, where technology meets compassionate care. Every detail from high-resolution imaging to interventional diagnostic procedures is tailored to provide you with results that are not only precise but also delivered with speed and reliability.
             </p>
             <p>
-              What sets Vaarahi apart is our patient-first philosophy: we don’t just focus on images, we focus on the people behind them. With every scan, we aim to provide peace of mind, early detection, and better treatment outcomes.
+              What sets Vaarahi apart is our patient-first philosophy: we don't just focus on images, we focus on the people behind them. With every scan, we aim to provide peace of mind, early detection, and better treatment outcomes.
             </p>
             
           </div>
@@ -2869,12 +3715,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-5 pe-xl-5 d-none d-md-block">
                     <figure>
-                        <img src="images/contact-bg-new.jpg" alt="Quick Enquiry" class="img-fluid">
+                        <img src="images/contact-bg-new.webp" alt="Quick Enquiry" class="img-fluid">
                     </figure>
                 </div>
                 <div class="col-md-6 col-lg-7">
                     <div class="section-title mb-2">
-                        <div class="h1">Quick Enquiry</div>
+                        <div class="enquiry" style="font-size: 32px; color: #000000;">Quick Enquiry</div>
                     </div>
                     <p>For general enquiries, please send us a message and we'll get right back to you. You can also call us directly to talk with a member of our customer care.</p>
                     <form action="" class="mt-4 pt-lg-2" onsubmit="submitForm(); return false;" method="post" autocomplete="off" id="dateForm">
@@ -3353,6 +4199,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
+<!-- ===== Sticky Contact Button ===== -->
+<div id="stickyContactBtn">
+  
+</div>
+
+<!-- ===== Sticky Contact Form ===== -->
+<div id="stickyContactForm">
+  <div class="form-box">
+    
+    <div class="form-header">
+      <h3>Book your Test</h3>
+      <span id="closeForm"><i class="fas fa-xmark"></i></span>
+    </div>
+
+
+    <form id="bookingForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input 
+  type="tel"
+  name="phone"
+  id="phone"
+  placeholder="Phone Number"
+  maxlength="10"
+  required
+  pattern="[6-9][0-9]{9}"
+  title="Please enter valid 10 digit mobile number"
+>
+      <input type="text" id="Requirement" name="service" readonly>
+
+      <button type="submit" id="submitBtn">
+  <span class="btn-text">Request Call Back <i class="fas fa-arrow-right"></i></span>
+  <span class="btn-loader" style="display:none;"></span>
+</button>
+    </form>
+
+  </div>
+</div>
+
+
 <style>
 /* Success animation styles */
 .success-animation {
@@ -3442,9 +4327,7 @@ $(".best-seller-slider").owlCarousel({
 });
 
 
-  autoScroll();
-
-  // Pause on hover
+if (wrapper) {
   wrapper.addEventListener("mouseenter", function () {
     speed = 0;
   });
@@ -3452,14 +4335,18 @@ $(".best-seller-slider").owlCarousel({
   wrapper.addEventListener("mouseleave", function () {
     speed = 1;
   });
+}
 
   // View All button
+if (viewAllBtn && wrapper) {
   viewAllBtn.addEventListener("click", function () {
     speed = 0;
     wrapper.style.overflowX = "visible";
     wrapper.style.flexWrap = "wrap";
     wrapper.style.justifyContent = "center";
   });
+}
+
 
 });
 
@@ -3601,6 +4488,134 @@ function checkRepeatingCharacters(input) {
           }
         });
       });
+
+      const btn = document.getElementById("stickyContactBtn");
+const form = document.getElementById("stickyContactForm");
+const closeBtn = document.getElementById("closeForm");
+
+// open form
+btn.onclick = () => {
+  form.style.display = "flex";
+};
+
+// close form
+closeBtn.onclick = () => {
+  form.style.display = "none";
+};
+
+// close when clicking outside
+window.onclick = (e) => {
+  if(e.target === form){
+    form.style.display = "none";
+  }
+};
+
+// popup elements
+const contactForm = document.getElementById("stickyContactForm");
+const closeFormBtn = document.getElementById("closeForm");
+const careField = document.getElementById("Requirement");
+
+// open popup when BOOK NOW clicked
+document.querySelectorAll(".cart-btn").forEach(btn => {
+
+  btn.addEventListener("click", function() {
+
+    // get test name from button
+    const testName = this.getAttribute("data-test");
+
+    // show popup
+    contactForm.style.display = "flex";
+
+    // auto fill care requirement
+    if(careField && testName){
+      careField.value = testName + " booking";
+    }
+
+  });
+
+});
+
+// close popup
+closeFormBtn.onclick = () => {
+  contactForm.style.display = "none";
+};
+
+// close when clicking outside
+window.onclick = (e) => {
+  if(e.target === contactForm){
+    contactForm.style.display = "none";
+  }
+};
+
+
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const phone = document.getElementById("phone").value.trim();
+
+  const form = this;
+  const formData = new FormData(form);
+
+  const submitBtn = document.getElementById("submitBtn");
+  const btnText = submitBtn.querySelector(".btn-text");
+  const loader = submitBtn.querySelector(".btn-loader");
+
+  // 👉 disable button + show loader
+  submitBtn.disabled = true;
+  btnText.innerText = "Submitting...";
+  loader.style.display = "inline-block";
+
+  fetch("https://script.google.com/macros/s/AKfycbzCdCCE0yROMKFzz2oSBLZ9VAvZ777BTWKbYvg1skrTA0LheAIl6Elqnmq258NxYeU/exec", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+
+    if (data.status === "success") {
+       window.location.href = "https://vaarahidiagnostics.com/thankyou.php";
+      form.reset();
+      document.getElementById("stickyContactForm").style.display = "none";
+    } else {
+      alert("Error saving data");
+    }
+
+  })
+  .catch(error => {
+    console.error(error);
+    alert("Something went wrong");
+  })
+  .finally(() => {
+    // 👉 enable button + hide loader
+    submitBtn.disabled = false;
+    btnText.innerText = "Request Call Back →";
+    loader.style.display = "none";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+const buttons = document.querySelectorAll(".filter-btn");
+const items = document.querySelectorAll(".health-item");
+
+function showCategory(category){
+items.forEach(item=>{
+item.style.display = item.dataset.category === category ? "block" : "none";
+});
+}
+
+// default
+showCategory("preventive");
+
+buttons.forEach(btn=>{
+btn.addEventListener("click",function(){
+buttons.forEach(b=>b.classList.remove("active"));
+this.classList.add("active");
+showCategory(this.dataset.filter);
+});
+});
+
+});
+
     </script>
     <script src="<?php echo $siteurl; ?>public/js/custom.js"></script>
     <script src="<?php echo $siteurl; ?>lp/includes/common.js"></script>
