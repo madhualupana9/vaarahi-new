@@ -135,7 +135,7 @@ h5 {
 }
 .h6,
 h6 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 p {
   margin-top: 0;
@@ -19502,7 +19502,7 @@ section {
 .section-title .h1,
 .section-title h1 {
   font-size: 32px;
-  color: #ffffff;
+  color: #1e5b80;
 }
 .section-title .h1 span,
 .section-title h1 span {
@@ -20070,7 +20070,7 @@ textarea.form-control {
 #about {
   overflow: visible;
 }
-.about_img figure:after,
+/* .about_img figure:after,
 .about_img figure:before {
   content: "";
   position: absolute;
@@ -20079,6 +20079,15 @@ textarea.form-control {
   background: url(../images/heart_circle.png) no-repeat center center/contain;
   width: 111px;
   height: 112px;
+} */
+
+.about_img figure:after, .about_img figure:before {
+    content: "";
+    position: absolute;
+    right: -43px;
+    bottom: -56px;
+    width: 111px;
+    height: 112px;
 }
 .about_img figure:after {
   background: url(../images/bg_circle.png) no-repeat center center/contain;

@@ -1,16 +1,13 @@
 <?php 
-header('Content-Type: text/html; charset=utf-8');
+
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 $siteurl = $protocol . $_SERVER['HTTP_HOST'] . "/"; 
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<meta charset="UTF-8">
-
        <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -20,14 +17,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
     <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
     <!-- Primary Meta Tags -->
-    <title>Vaarahi Diagnostics - Best Diagnostic Centre in Beeramguda | Blood Test Lab</title>
-    <meta name="description" content="Vaarahi Diagnostics: Advanced diagnostic centre in Beeramguda. Best blood testing lab with home sample collection. X-Ray, CT Scan, Mammography, ECG, Ultrasound services. Call 9090135135." />
-    <meta name="keywords" content="diagnostic centre Beeramguda, mri scanning, diagnostic test, diagnostic radiology, radiology imaging, lab diagnostics, x ray, radiology centers, diagnostic services, blood test, imaging diagnostic center, diagnostic blood tests, near by ct scan center, x ray diagnostic centre, radiology imaging center, diagnostic blood tests, blood diagnostic lab, diagnostic and imaging center, nearby diagnostic lab" />
+    <title>Vaarahi Diagnostics - Best Diagnostic Centre in Hyderabad | Blood Test Lab</title>
+    <meta name="description" content="Vaarahi Diagnostics: Advanced diagnostic centre in Hyderabad. Best blood testing lab with home sample collection. X-Ray, CT Scan, Mammography, ECG, Ultrasound services. Call 9090135135." />
+    <meta name="keywords" content="diagnostic centre hyderabad, blood test lab, home sample collection, CT scan, X-Ray, mammography, ECG, ultrasound, pathology lab, health checkup" />
     
     <!-- Canonical -->
     <link rel="canonical" href="<?php echo $siteurl; ?>" />
@@ -35,24 +33,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Open Graph / Facebook -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Vaarahi Diagnostics - Best Diagnostic Centre in Beeramguda | Blood Test Lab" />
-    <meta property="og:description" content="Advanced diagnostic centre in Beeramguda with home sample collection. X-Ray, CT Scan, Mammography, ECG, Ultrasound services. Call 9090135135." />
+    <meta property="og:title" content="Vaarahi Diagnostics - Best Diagnostic Centre in Hyderabad | Blood Test Lab" />
+    <meta property="og:description" content="Advanced diagnostic centre in Hyderabad with home sample collection. X-Ray, CT Scan, Mammography, ECG, Ultrasound services. Call 9090135135." />
     <meta property="og:url" content="<?php echo $siteurl; ?>" />
     <meta property="og:site_name" content="Vaarahi Diagnostics" />
     <meta property="og:image" content="<?php echo $siteurl; ?>images/Vaarahi-logo.png" />
     <meta property="og:image:width" content="1039" />
     <meta property="og:image:height" content="261" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="Vaarahi Diagnostics - Best Diagnostic Centre in Beeramguda" />
+    <meta property="og:image:alt" content="Vaarahi Diagnostics - Best Diagnostic Centre in Hyderabad" />
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Vaarahihyd" />
     <meta name="twitter:creator" content="@Vaarahihyd" />
-    <meta name="twitter:title" content="Vaarahi Diagnostics - Best Diagnostic Centre in Beeramguda" />
-    <meta name="twitter:description" content="Advanced diagnostic centre in Beeramguda with home sample collection. X-Ray, CT Scan, Mammography, ECG, Ultrasound services." />
+    <meta name="twitter:title" content="Vaarahi Diagnostics - Best Diagnostic Centre in Hyderabad" />
+    <meta name="twitter:description" content="Advanced diagnostic centre in Hyderabad with home sample collection. X-Ray, CT Scan, Mammography, ECG, Ultrasound services." />
     <meta name="twitter:image" content="<?php echo $siteurl; ?>images/Vaarahi-logo.png" />
-    <meta name="twitter:image:alt" content="Vaarahi Diagnostics - Best Diagnostic Centre in Beeramguda" />
+    <meta name="twitter:image:alt" content="Vaarahi Diagnostics - Best Diagnostic Centre in Hyderabad" />
     
     <link rel="icon" type="image/png" href="<?php echo $siteurl; ?>images/vaarahi-icon.png" />
     <link rel="apple-touch-icon" href="<?php echo $siteurl; ?>images/vaarahi-icon.png" />
@@ -66,13 +64,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "alternateName": "Vaarahi",
       "url": "<?php echo $siteurl; ?>",
       "logo": "<?php echo $siteurl; ?>images/Vaarahi-logo.png",
-      "description": "Vaarahi Diagnostics is a leading provider of diagnostic services in Beeramguda, offering a full range of lab tests, scannings, diagnostic tests, blood sample testing and collection.",
+      "description": "Vaarahi Diagnostics is a leading provider of diagnostic services in Hyderabad, offering a full range of lab tests, scannings, diagnostic tests, blood sample testing and collection.",
       "medicalSpecialty": "Diagnostics",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Plot No. 8-2, Check Post, 293/A/1268, Rd Number 36",
         "addressLocality": "Jubilee Hills",
-        "addressRegion": "Beeramguda",
+        "addressRegion": "Hyderabad",
         "postalCode": "500033",
         "addressCountry": "India"
       },
@@ -157,7 +155,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "@id": "<?php echo $siteurl; ?>#website",
       "url": "<?php echo $siteurl; ?>",
       "name": "Vaarahi Diagnostics",
-      "description": "Vaarahi Diagnostics is a leading provider of diagnostic services in Beeramguda.",
+      "description": "Vaarahi Diagnostics is a leading provider of diagnostic services in Hyderabad.",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "<?php echo $siteurl; ?>/search?q={search_term_string}",
@@ -183,12 +181,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- CSS and JS Resources -->
     <link rel="stylesheet" href="<?php echo $siteurl; ?>css/stylesheet.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <script src="<?php echo $siteurl; ?>js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <meta name="google-site-verification" content="bfqiMikalvwDnHf1PP4Ir1fCOtdlfjobK-faLTKVfJw" />
   </head>
 
@@ -215,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="menu-ul-class">
             <!-- <li><a href="<?php echo $siteurl; ?>">Home</a></li> -->
             <li>
-              <a href="<?php echo $siteurl; ?>">Home</a>
+              <a href="<?php echo $siteurl; ?>#hero-slider">Home</a>
             </li>
             <li>
               <a href="<?php echo $siteurl; ?>#about">About Us</a>
@@ -578,7 +574,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       #header .menus_btns li a.readmore {
         padding: 0 40px;
       }
-    
+    </style>
+    <style>
       .healths .container.bg-hero-banner.bg-hero-banner-moblie {
         max-width: auto;
         border-radius: 20px;
@@ -781,7 +778,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .section-title {
         font-size: 2.5rem;
         font-weight: 700;
-        color: #1e5b80;
+        color: #2c3e50;
         margin-bottom: 1rem;
       }
 
@@ -1602,7 +1599,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1e5b80;
+  color: #2c3e50;
   margin-bottom: 0;
 }
 
@@ -1791,224 +1788,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 }
 
-
-
-
-.hero-title{
-  font-size:35px;
-  font-weight:500;
-  line-height:1.3;
-  color:#ffffff; /* main blue text */
-  letter-spacing:0.5px;
-}
-
-/* 20% OFF box */
-.offer-box{
-  background:#2f5f9f;
-  color:#fff;
-  padding:4px 14px;
-  border-radius:4px;
-  font-weight:700;
-  display:inline-block;
-}
-
-/* Vaarahi text */
-.brand-text{
-  font-weight:600;
-}
-
-/* @Beeramguda big bold */
-.location-text{
-  font-size:52px;
-  font-weight:700;
-  color:#ffffff;
-}
-@media(max-width:768px){
-  .hero-title{
-    font-size:30px;
-  }
-
-  .location-text{
-    font-size:34px;
-  }
-}
-.swiper {
-  width: 100%;
-  height: 250px;
-}
-
-@media (max-width:768px){
-  .swiper {
-    height: 180px;
-  }
-}
-
-.swiper-slide img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-
-
-    </style>
-<!-- new design styles start-->
-
-<style>
-
-  /* ===== SLIDER CONTAINER FIX ===== */
-.hero-banner {
-  padding: 16px 0px; /* left-right gap like Mr.Yoda */
-}
-
-/* Centered container */
-.hero-banner .swiper {
- 
-  margin: auto;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-/* Banner height */
-.hero-banner .swiper {
-  height: 250px;
-}
-
-/* Image styling */
-.hero-banner .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Arrow styling */
-.swiper-button-next,
-.swiper-button-prev {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #ffffff;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-  border: 1px solid #eee;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: all .3s ease;
-}
-
-/* Arrow icon size */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 18px !important;
-  font-weight: 900;
-  color: #1e5b80;
-}
-
-/* Hover effect */
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background: #1e5b80;
-  transform: scale(1.1);
-}
-
-/* Hover icon color */
-.swiper-button-next:hover::after,
-.swiper-button-prev:hover::after {
-  color: #fff;
-}
-
-/* Proper position inside rounded banner */
-.hero-banner .swiper-button-prev {
-  left: 15px;
-}
-
-.hero-banner .swiper-button-next {
-  right: 15px;
-}
-
-/* Mobile size */
-@media(max-width:768px){
-  .swiper-button-next,
-  .swiper-button-prev{
-    width:40px;
-    height:40px;
-  }
-
-  .swiper-button-next::after,
-  .swiper-button-prev::after{
-    font-size:14px;
-  }
-}
-.offer-section {
-  padding: 40px 0;
-}
-
-.offer-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.offer-card {
-  border: 1px solid #eee;
-  border-radius: 20px;
-  padding: 20px;
-  background: #fff;
-  position: relative;
-  min-height: 170px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-}
-
-.offer-badge {
-  background: #e7f5eb;
-  color: #0a8f3c;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.offer-card h3 {
-  font-size: 18px;
-  margin: 10px 0 5px;
-}
-
-.offer-card p {
-  color: #777;
-}
-
-.offer-img {
-  width: 120px;
-}
-
-.offer-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-
-/* mobile */
-@media (max-width: 992px) {
-  .offer-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 576px) {
-  .offer-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .best-seller-section {
-  background: linear-gradient(135deg, #1e5b80 0%, #1e5b80 100%);
+  background: #cfe0dc;
   padding: 15px 0;
 }
 
@@ -2050,40 +1831,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   margin-bottom: 15px;
   font-weight: 600;
 }
-/* Image inside product card */
-.card-image {
-  width: 100%;
-  height: 140px;
-  border-radius: 11px;
-  overflow: hidden;
-  margin-bottom: 6px;
-  border: 3px solid #f6f6f6; /* blue line */
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* push price row to bottom */
-.product-card .price-row {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* optional: prevent long title breaking layout */
-.product-card h4 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;      /* max 2 lines */
-  -webkit-box-orient: vertical;
-}
 
 /* ===== BADGE ===== */
 .discount {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background: #d8f3dc;
   color: #1b5e20;
   font-size: 13px;
@@ -2123,13 +1876,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 
 .view-btn {
-  border: 1px solid #0e5e81;
-  color: #0e5e81;
+  border: 1px solid #28a745;
+  color: #28a745;
   background: transparent;
 }
 
 .cart-btn {
-  background: #0e5e81;
+  background: #28a745;
   color: #fff;
   border: none;
   margin-left: 8px;
@@ -2150,1595 +1903,219 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   background: #28a745;
   border-radius: 10px;
 }
-.owl-nav {
-  position: absolute;
-  top: -70px;
-  right: 0;
-  display: flex;
-  gap: 10px;
+
+.hero-title{
+  font-size:35px;
+  font-weight:500;
+  line-height:1.3;
+  color:#ffffff; /* main blue text */
+  letter-spacing:0.5px;
 }
 
-.owl-nav button {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: white !important;
-  border: 1px solid #28a745 !important;
-  color: #28a745 !important;
-  transition: 0.3s;
-}
-
-.owl-nav button:hover {
-  background: #28a745 !important;
-  color: white !important;
-} 
-
-/* ===== Sticky Button ===== */
-#stickyContactBtn{
-
-}
-
-#stickyContactBtn:hover{
-  transform: translateY(-3px);
-}
-
-/* ===== Popup Background ===== */
-#stickyContactForm{
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.4);
-  display:none;
-  align-items:center;
-  justify-content:center;
-  z-index:99999;
-}
-
-/* ===== Form Box ===== */
-.form-box{
-  background:#fff;
-  padding:30px;
-  border-radius:20px;
-  width:320px;
-  animation: slideUp 0.3s ease;
-}
-
-@keyframes slideUp{
-  from{transform:translateY(40px);opacity:0}
-  to{transform:translateY(0);opacity:1}
-}
-
-/* ===== Header ===== */
-.form-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.form-header h3{
-  margin:0;
-}
-
-#closeForm{
-  cursor:pointer;
-  font-size:20px;
-}
-
-/* ===== Inputs ===== */
-.form-box input{
-  width:100%;
-  padding:14px;
-  margin:10px 0;
-  border-radius:12px;
-  border:1px solid #ddd;
-}
-
-/* ===== Button ===== */
-.form-box button{
-  width:100%;
-  padding:14px;
-  border:none;
-  border-radius:12px;
-  background:#0e5e81;
+/* 20% OFF box */
+.offer-box{
+  background:#2f5f9f;
   color:#fff;
-  font-weight:600;
-  cursor:pointer;
-}
-
-.bullets {
-  list-style: none;
-  padding: 0;
-}
-
-.bullets li {
-  display: flex;
-  gap: 15px;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.bullets .icon {
-  font-size: 24px;
-  color: #1f5d75; /* your theme color */
-  margin-top: 5px;
-}
-
-
-/* Image wrapper */
-.about_img figure {
-  position: relative;
-  margin: 0;
-}
-
-/* Curved image */
-.about_img img {
-  border-radius: 25px;
-  position: relative;
-  z-index: 2;
-}
-
-/* Decorative frame behind image */
-.about_img figure::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 8px solid #1f5d75; /* your theme color */
-  border-radius: 25px;
-  top: 25px;
-  left: 25px;
-  z-index: 1;
-}
-
-.btn-loader {
-  width:18px;
-  height:18px;
-  border:3px solid #fff;
-  border-top:3px solid transparent;
-  border-radius:50%;
+  padding:4px 14px;
+  border-radius:4px;
+  font-weight:700;
   display:inline-block;
-  animation: spin 0.6s linear infinite;
-  margin-left:8px;
 }
 
-@keyframes spin {
-  100% { transform: rotate(360deg); }
+/* Vaarahi text */
+.brand-text{
+  font-weight:600;
 }
 
-.best-seller-slider .product-card {
-  height: 100%;
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* @Beeramguda big bold */
+.location-text{
+  font-size:52px;
+  font-weight:700;
+  color:#ffffff;
 }
-
-/* Membership Banner */
-.membership-banner {
-  padding: 20px 0;
-}
-
-.membership-banner img {
-  width: 100%;
-  border-radius: 22px;
-  object-fit: cover;
-}
-
-/* Desktop image */
-.banner-desktop {
-  height: 250px;
-  display: none;
-}
-
-/* Mobile image */
-.banner-mobile {
-  height: 180px;
-}
-
-/* Desktop view */
-@media (min-width: 1200px) {
-  .banner-desktop {
-    display: block;
+@media(max-width:768px){
+  .hero-title{
+    font-size:30px;
   }
 
-  .banner-mobile {
-    display: none;
+  .location-text{
+    font-size:34px;
   }
 }
 
-.health-checkups {
-  background: #f7f9fc;
-}
+    </style>
 
-.health-card {
-  border: 2px solid #bbb7e5;
-  transition: 0.3s ease;
-}
+    <!-- Modern Hero Slider Section -->
+    <section id="hero-slider" class="hero-slider-section">
+      <div id="modernSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+        
 
-.health-card:hover {
-  transform: scale(1.05);
-  border: none;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-}
+         <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="hero-slide">
+              <div class="hero-image">
+                <img src="<?php echo $siteurl; ?>images/banner/banner11.jpeg"
+                     class="d-block w-100"
+                     alt="Comprehensive Health Checkup Packages"
+                     loading="lazy">
+              </div>
+              <div class="hero-overlay"></div>
+              <div class="hero-content">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                        <h1 class="hero-title">
+                            Enjoy <span class="offer-box">20% OFF</span><br>
+                            on All Blood<br>
+                            Tests in <span class="brand-text">Vaarahi</span><br>
+                            <span class="location-text">@Beeramguda</span>
+                          </h1>
+                        <div class="hero-buttons">
+                          <a href="<?php echo $siteurl; ?>#book-a-test" class="btn btn-primary btn-hero">
+                            <i class="fas fa-heart me-2"></i>
+                           Book Test Now
+                          </a>
+                          <a href="tel:+919090135135" class="btn btn-outline-light btn-hero">
+                            <i class="fas fa-phone me-2"></i>
+                            Call Now
+                          </a>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-.health-checkups .btn.active {
-  background: #0e5e81;
-  color: white;
-}
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="hero-slide">
+              <div class="hero-image">
+                <img src="<?php echo $siteurl; ?>images/banner/banner10.jpg"
+                     class="d-block w-100"
+                     alt="Comprehensive Health Checkup Packages"
+                     loading="lazy">
+              </div>
+              <div class="hero-overlay"></div>
+              <div class="hero-content">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                        <h1 class="hero-title">
+                          <span class="text-gradient">Comprehensive</span><br>
+                          Health Checkup Packages
+                        </h1>
+                        <div class="hero-buttons">
+                          <a href="<?php echo $siteurl; ?>#book-a-test" class="btn btn-primary btn-hero">
+                            <i class="fas fa-heart me-2"></i>
+                           Book Test Now
+                          </a>
+                          <a href="tel:+919090135135" class="btn btn-outline-light btn-hero">
+                            <i class="fas fa-phone me-2"></i>
+                            Call Now
+                          </a>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div class="hero-slide">
+              <div class="hero-image">
+                <img src="<?php echo $siteurl; ?>images/banner/banner9.jpg"
+                     class="d-block w-100"
+                     alt="Comprehensive Health Checkup Packages"
+                     loading="lazy">
+              </div>
+              <div class="hero-overlay"></div>
+              <div class="hero-content">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                        <h1 class="hero-title">
+                          <span class="text-gradient">Comprehensive</span><br>
+                          Health Checkup Packages
+                        </h1>
+                       
+                        <div class="hero-buttons">
+                          <a href="<?php echo $siteurl; ?>#book-a-test" class="btn btn-primary btn-hero">
+                            <i class="fas fa-heart me-2"></i>
+                           Book Test Now
+                          </a>
+                          <a href="tel:+919090135135" class="btn btn-outline-light btn-hero">
+                            <i class="fas fa-phone me-2"></i>
+                            Call Now
+                          </a>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-/* SECTION BACKGROUND */
-.health-checkups {
-  background: #f5f7fb;
-}
-
-/* FILTER BUTTONS */
-.filter-btn {
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  padding: 8px 18px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  background: white;
-  transition: 0.3s;
-}
-
-.filter-btn:hover {
-  background: #0e5e81;
-  color: white;
-}
-
-.filter-btn.active {
-  background: #0e5e81;
-  color: white;
-}
-
-/* CARD STYLE */
-.health-card {
-  border-radius: 16px;
-  padding: 12px;
-  transition: 0.3s ease;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-}
-
-.health-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
-}
-
-/* PACKAGE BADGE */
-.package-badge {
-  background: #e7f1ff;
-  color: #0e5e81;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  width: fit-content;
-}
-
-/* PRICE BOX */
-.price-box {
-  background: linear-gradient(135deg,#f8fbff,#eef5ff);
-  padding: 12px;
-  border-radius: 10px;
-}
-
-.price-box del {
-  color: #999;
-  font-size: 14px;
-}
-
-.price-box h4 {
-  margin: 0;
-  color: #0e5e81;
-  font-weight: 700;
-}
-
-.price-box span {
-  font-size: 13px;
-  color: #28a745;
-  font-weight: 600;
-}
-
-/* BOOK BUTTON */
-.book-btn {
-  background: #0e5e81;
-  color: white;
-  border-radius: 10px;
-  font-weight: 600;
-  padding: 10px;
-}
-
-.book-btn:hover {
-  background: #0e5e81;
-  color: white;
-}
-
-/* FILTER */
-.filter-wrapper{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-}
-
-.filter-btn{
-padding:8px 16px;
-border-radius:25px;
-border:none;
-background:#eef2f7;
-font-weight:500;
-cursor:pointer;
-transition:0.3s;
-}
-
-.filter-btn.active,
-.filter-btn:hover{
-background:#0e5e81;
-color:#fff;
-}
-
-/* CARD */
-.modern-card{
-background:#fff;
-padding:20px;
-border-radius:18px;
-box-shadow:0 8px 25px rgba(0,0,0,0.06);
-height:100%;
-transition:0.3s;
-}
-
-.modern-card:hover{
-transform:translateY(-5px);
-}
-
-.package-badge{
-background:#e0f2fe;
-color:#0369a1;
-padding:4px 12px;
-border-radius:20px;
-font-size:12px;
-display:inline-block;
-}
-
-/* ACCORDION */
-.accordion-item-custom{
-border-top:1px solid #eee;
-padding:10px 0;
-}
-
-.accordion-header-custom{
-display:flex;
-justify-content:space-between;
-cursor:pointer;
-font-weight:600;
-}
-
-.accordion-body-custom ul{
-/* padding-left:18px; */
-margin:0;
-}
-
-/* PRICE */
-.price-section{
-text-align:center;
-}
-
-.price-section del{
-color:#888;
-}
-
-.price-section h4{
-color:#0e5e81;
-font-weight:700;
-}
-
-
-
-.book-btn{
-background:#0e5e81;
-color:#fff;
-border:none;
-padding:8px;
-border-radius:8px;
-font-weight:600;
-}
-
-.book-btn:hover{
-background:#084c63;
-}
-
-/* Smooth animation */
-.accordion-body-custom{
-max-height:0;
-overflow:hidden;
-transition:max-height 0.4s ease;
-padding-top:0;
-}
-
-/* Active open state */
-.accordion-item-custom.active .accordion-body-custom{
-max-height:500px;
-padding-top:15px;
-}
-
-/* Premium Test List */
-.test-list{
-list-style:none;
-padding:0;
-margin:0;
-}
-
-.test-list li{
-display:flex;
-align-items:center;
-padding:8px 12px;
-border-radius:8px;
-margin-bottom:6px;
-background:#f8fafc;
-font-size:14px;
-transition:0.3s;
-}
-
-.test-list li:hover{
-background:#e0f2fe;
-transform:translateX(4px);
-}
-
-.test-icon{
-color:#0e5e81;
-font-weight:bold;
-margin-right:3px;
-font-size:13px;
-}
-  </style>
-<!-- new design styles end -->
-
-
-<section class="hero-banner">
-  <div class="swiper">
-    <div class="swiper-wrapper">
-
-      <!-- Slide 1 -->
-      <div class="swiper-slide">
-        <a class="btn cart-btn" data-test="CBP Test" >
-        <picture>
-          <!-- Mobile image -->
-          <source 
-            media="(max-width:768px)" 
-            srcset="images/banner/slider-mob-1.jpg"
-          >
-
-          <!-- Desktop image -->
-          <img src="images/banner/slider-desk-1.jpg"
-               class="img-fluid"
-               alt="Banner">
-        </picture>
-</a>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="swiper-slide">
-        <picture>
-          <source 
-            media="(max-width:768px)" 
-            srcset="images/banner/slider-mob-2.jpg"
-          >
-
-          <img src="images/banner/slider-desk-2.jpg"
-               class="img-fluid"
-               alt="Banner">
-        </picture>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="swiper-slide">
-        <a class="btn cart-btn" data-test="New Born Scanning" >
-        <picture>
-          <source 
-            media="(max-width:768px)" 
-            srcset="images/banner/slider-mob-3.jpg"
-          >
-
-          <img src="images/banner/slider-desk-3.jpg"
-               class="img-fluid"
-               alt="Banner">
-        </picture>
-</a>
-      </div>
-
-    </div>
-
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
-
-
-<section class="offer-section">
-  <div class="container">
-    <div class="offer-grid">
-
-      <!-- Offer 1 -->
-      <div class="offer-card">
-        <div class="offer-text">
-          <span class="offer-badge">FREE</span>
-          <h3>Home Sample Collection</h3>
-          <p>We collect samples from your home at no extra cost.</p>
         </div>
-        <img src="https://www.mryoda.com/images/home/home-diagnostics-services.png" class="offer-img">
-      </div>
 
-      <!-- Offer 2 -->
-      <div class="offer-card">
-        <div class="offer-text">
-          <span class="offer-badge">20% OFF</span>
-          <h3>All Blood Tests</h3>
-          <p>Get flat 20% discount on all blood tests.</p>
+        <!-- Modern Navigation Controls -->
+        <button class="carousel-control-prev modern-nav-btn" type="button" data-bs-target="#modernSlider" data-bs-slide="prev">
+          <div class="nav-btn-content">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next modern-nav-btn" type="button" data-bs-target="#modernSlider" data-bs-slide="next">
+          <div class="nav-btn-content">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Modern Indicators -->
+        <div class="carousel-indicators modern-indicators">
+          <button type="button" data-bs-target="#modernSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+            <span class="indicator-line"></span>
+          </button>
+          <button type="button" data-bs-target="#modernSlider" data-bs-slide-to="1" aria-label="Slide 2">
+            <span class="indicator-line"></span>
+          </button>
+
+           <button type="button" data-bs-target="#modernSlider" data-bs-slide-to="2" aria-label="Slide 3">
+            <span class="indicator-line"></span>
+          </button>
+          
+          <button type="button" data-bs-target="#modernSlider" data-bs-slide-to="3" aria-label="Slide 4">
+            <span class="indicator-line"></span>
+          </button>
+
         </div>
-        <img src="https://www.mryoda.com/images/home/home-dnaDecoder-services.png" class="offer-img">
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down-indicator">
+          <div class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <span class="scroll-text">Scroll Down</span>
+        </div>
       </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<section id="best-seller" class="best-seller-section">
-    <div class="container-fluid px-5">
-
-        <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="section-title">Popular Tests</h2>
-    </div>
-
-    <div class="owl-carousel best-seller-slider">
-
-<!-- 1 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/Complete Blood Picture.png" alt="Complete Blood Picture">
-  </div>
-  <h4>Complete Blood Picture (CBP)</h4>
-  <div class="price-row">
-    <h5>&#8377;300</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="Complete Blood Picture (CBP)">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 2 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="https://vaarahidiagnostics.com/images/services/Ultrasound.jfif" alt="Ultrasound">
-  </div>
-  <h4>Ultrasound</h4>
-  <div class="price-row">
-    <h5>&#8377;1000</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="Ultrasound">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 3 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="https://vaarahidiagnostics.com/images/services/CT Scan.jfif" alt="CT Scan">
-  </div>
-  <h4>CT Scan</h4>
-  <div class="price-row">
-    <h5>&#8377;2500</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="CT Scan">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 4 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="https://vaarahidiagnostics.com/images/services/Mammography.jfif" alt="Digital Mammography">
-  </div>
-  <h4>Digital Mammography</h4>
-  <div class="price-row">
-    <h5>&#8377;3000</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="Digital Mammography">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 5-->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/Vitamin D.png" alt="Vitamin D">
-  </div>
-  <h4>Vitamin D</h4>
-  <div class="price-row">
-    <h5>&#8377;1500</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="Vitamin D">Book Now</button>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- 6 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/Lipid Profile.png" alt="Lipid Profile">
-  </div>
-  <h4>Lipid Profile</h4>
-  <div class="price-row">
-    <h5>&#8377;600</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="Lipid Profile">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 7 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/Vitamin B12.png" alt="Vitamin B12">
-  </div>
-  <h4>Vitamin B12</h4>
-  <div class="price-row">
-    <h5>&#8377;900</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="Vitamin B12">Book Now</button>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- 8 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/services/X-Ray%20&%20Dental%20X-Ray.jfif" alt="X-Ray">
-  </div>
-  <h4>X-Ray</h4>
-  <div class="price-row">
-    <h5>&#8377;400</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="X-Ray">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 9 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/LIVER FUNCTION TEST.png" alt="LIVER FUNCTION TEST">
-  </div>
-  <h4>LIVER FUNCTION TEST (LFT)</h4>
-  <div class="price-row">
-    <h5>&#8377;600</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="LIVER FUNCTION TEST (LFT)">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 10 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/THYROID PROFILE.png" alt="THYROID PROFILE">
-  </div>
-  <h4>THYROID PROFILE (TFT)</h4>
-  <div class="price-row">
-    <h5>&#8377;500</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="THYROID PROFILE (TFT)">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 11 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/TRIGLYCERIDES.png" alt="Complete Blood Picture">
-  </div>
-  <h4>TRIGLYCERIDES (1)</h4>
-  <div class="price-row">
-    <h5>&#8377;500</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="TRIGLYCERIDES (1)">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 12 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/CANCER ANTIGEN.png" alt="Complete Blood Picture">
-  </div>
-  <h4>CANCER ANTIGEN</h4>
-  <div class="price-row">
-    <h5>&#8377;1000</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="CANCER ANTIGEN">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 13-->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/COMPLETE URINE EXAMINATION.png" alt="Complete Blood Picture">
-  </div>
-  <h4>COMPLETE URINE EXAMINATION (CUE )</h4>
-  <div class="price-row">
-    <h5>&#8377;1000</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="COMPLETE URINE EXAMINATION (CUE )">Book Now</button>
-    </div>
-  </div>
-</div>
-
-
-<!-- 15 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/RENAL FUNCTION TEST (RFT).png" alt="Complete Blood Picture">
-  </div>
-  <h4>RENAL FUNCTION TEST (RFT)</h4>
-  <div class="price-row">
-    <h5>&#8377;900</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="RENAL FUNCTION TEST (RFT)">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 16 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/RANDOM BLOOD SUGAR.png" alt="Complete Blood Picture">
-  </div>
-  <h4>RANDOM BLOOD SUGAR (Hexokinase)</h4>
-  <div class="price-row">
-    <h5>&#8377;80</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="RANDOM BLOOD SUGAR (Hexokinase)">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 17 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/INSULIN RANDOM.png" alt="Complete Blood Picture">
-  </div>
-  <h4>INSULIN RANDOM</h4>
-  <div class="price-row">
-    <h5>&#8377;750</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="INSULIN RANDOM">Book Now</button>
-    </div>
-  </div>
-</div>
-
-<!-- 18 -->
-<div class="product-card">
-  <div class="card-image">
-    <img src="images/tests/New Born Screening.png" alt="Complete Blood Picture">
-  </div>
-  <h4>New Born Screening	</h4>
-  <div class="price-row">
-    <h5>&#8377;3000</h5>
-    <div>
-      <!-- <button class="btn view-btn">View</button> -->
-      <button class="btn cart-btn" data-test="INSULIN RANDOM">Book Now</button>
-    </div>
-  </div>
-</div>
-
     </section>
 
+    
 
-
-
-    <section class="health-checkups py-5">
-<div class="container">
-
-<!-- TITLE -->
-<div class="d-flex justify-content-between align-items-center mb-4">
-<h2 class="fw-bold">Our Health Checkups</h2>
-</div>
-
-<!-- FILTER BUTTONS -->
-<div class="filter-wrapper mb-4">
-<button class="filter-btn active" data-filter="preventive">Preventive Health Packages</button>
-<button class="filter-btn" data-filter="heart">Heart Health Checkup</button>
-<button class="filter-btn" data-filter="diabetic">Diabetic Checkup</button>
-<button class="filter-btn" data-filter="kidney">Kidney Health Package</button>
-<button class="filter-btn" data-filter="thyroid">Thyroid Checkup</button>
-</div>
-
-<div class="row g-4">
-
-<!-- ================= PREVENTIVE ================= -->
-
-<!-- ESSENTIAL -->
-<div class="col-md-6 col-lg-3 health-item" data-category="preventive">
-<div class="modern-card">
-<span class="package-badge">Preventive Health Packages</span>
-<h5 class="fw-bold mt-2">ESSENTIAL</h5>
-<p class="small text-muted">11 Tests | 69 Parameters</p>
-
-<div class="accordion-wrapper">
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Complete Blood Picture</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Liver Function Test</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Lipid Profile</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Complete Urine Examination</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Kidney Function Test</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TSH</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Fasting Blood Sugar</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HbA1c</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Calcium</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Chest X-Ray</li></ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Cardiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ECG</li></ul>
-</div>
-</div>
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;5000</del>
-<h4>&#8377;2499</h4>
-<span class="discount">50% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<!-- MASTER -->
-<div class="col-md-6 col-lg-3 health-item" data-category="preventive">
-<div class="modern-card">
-<span class="package-badge">Preventive Health Packages</span>
-<h5 class="fw-bold mt-2">MASTER</h5>
-<p class="small text-muted">16 Tests | 74 Parameters</p>
-
-<div class="accordion-wrapper">
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Complete Blood Picture</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Liver Function Test</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CALCIUM</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE URINE EXAMINATION</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIPID PROFILE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FASTING BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN B12</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN D3</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HBA1C</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TSH</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CA-125 - FEMALE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> PROSTATE SPECIFIC ANTIGEN (Total)- MALE</li>
-</ul>
-</div>
-</div>
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CHEST X-RAY</li> <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Ultrasound Abdomen</li></ul>
-</div>
-</div>
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Cardiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ECG</li></ul>
-</div>
-</div>
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;11000</del>
-<h4>&#8377;4499</h4>
-<span class="discount">59% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<!-- ADVANCED -->
-<div class="col-md-6 col-lg-3 health-item" data-category="preventive">
-<div class="modern-card">
-<span class="package-badge">Preventive Health Packages</span>
-<h5 class="fw-bold mt-2">ADVANCED</h5>
-<p class="small text-muted">20 Tests | 78 Parameters</p>
-
-<div class="accordion-wrapper">
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Complete Blood Picture</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIVER FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE URINE EXAMINATION</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> PHOSPHORUS</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FASTING BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN B12</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN D3</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HBA1C</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TSH</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIPID PROFILE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CALCIUM</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Pap Smear, Conventional  - FEMALE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CA-125 FEMALE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> PROSTATE SPECIFIC ANTIGEN- MALE</li>
-
-</ul>
-</div>
-</div>
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Chest X-Ray</li><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ULTRASOUND-ABDOMEN</li></ul>
-</div>
-</div>
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Cardiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ECG</li><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> 2D Echo</li> <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TMT</li></ul>
-</div>
-</div>
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;16000</del>
-<h4>&#8377;6999</h4>
-<span class="discount">56% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<!-- EXECUTIVE -->
-<div class="col-md-6 col-lg-3 health-item" data-category="preventive">
-<div class="modern-card">
-<span class="package-badge">Preventive Health Packages</span>
-<h5 class="fw-bold mt-2">EXECUTIVE</h5>
-<p class="small text-muted">25 Tests | 84 Parameters</p>
-
-<div class="accordion-wrapper">
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology<span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIVER FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE URINE EXAMINATION</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> PHOSPHORUS</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FASTING BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN B12</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN D3</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HBA1C</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TSH</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIPID PROFILE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CALCIUM</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Pap Smear, Conventional  - FEMALE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> PROSTATE SPECIFIC ANTIGEN- MALE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CHLORIDE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> SODIUM</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> POTASSIUM</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HS-CRP TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TOTAL IgE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CA-125 FEMALE</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Chest X-Ray</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ULTRASOUND-ABDOMEN</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Cardiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ECG</li> <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> 2D ECHO</li> <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TMT</li></ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;18000</del>
-<h4>&#8377;8999</h4>
-<span class="discount">50% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<!-- ================= HEART ================= -->
-
-<div class="col-md-6 col-lg-3 health-item" data-category="heart">
-<div class="modern-card">
-<span class="package-badge">Heart Health Checkup</span>
-<h5 class="fw-bold mt-2">ESSENTIAL</h5>
-<p class="small text-muted">9 Tests | 38 Parameters</p>
-
-<div class="accordion-wrapper">
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> POSTPRANDIAL BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> SERUM CREATININE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FASTING BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIPID PROFILE</li></ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Cardiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ECG</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> 2D ECHO</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TREADMILL TEST (TMT)</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> X-RAY CHEST</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-
-
-<div class="price-section mt-3">
-<del>&#8377;6000</del>
-<h4>&#8377;3499</h4>
-<span class="discount">42% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<div class="col-md-6 col-lg-3 health-item" data-category="heart">
-<div class="modern-card">
-<span class="package-badge">Heart Health Checkup</span>
-<h5 class="fw-bold mt-2">ADVANCED</h5>
-<p class="small text-muted">14 Tests | 45 Parameters</p>
-
-<div class="accordion-wrapper">
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIPID PROFILE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HBA1C</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FASTING BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> POSTPRANDIAL BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> APOLIPOPROTEIN A1</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HOMOCYSTEINE TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HsCRP</li></ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Cardiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ECG</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> 2D ECHO</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TREADMILL TEST (TMT)</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CHEST X-RAY</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CT CHEST</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;15000</del>
-<h4>&#8377;7499</h4>
-<span class="discount">50% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<!-- ================= DIABETIC ================= -->
-
-<div class="col-md-6 col-lg-3 health-item" data-category="diabetic">
-<div class="modern-card">
-<span class="package-badge">Diabetic Checkup</span>
-<h5 class="fw-bold mt-2">ESSENTIAL</h5>
-<p class="small text-muted">6 Tests | 35 Parameters</p>
-
-<div class="accordion-wrapper">
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests<span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-  <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> Fasting Blood Sugar</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> POSTPRANDIAL BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HBA1C</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIPID PROFILE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE URINE EXAMINATION</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li>No Tests</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;2500</del>
-<h4>&#8377;1199</h4>
-<span class="discount">52% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<div class="col-md-6 col-lg-3 health-item" data-category="diabetic">
-<div class="modern-card">
-<span class="package-badge">Diabetic Checkup</span>
-<h5 class="fw-bold mt-2">Master</h5>
-<p class="small text-muted">11 Tests | 70 Parameters</p>
-
-<div class="accordion-wrapper">
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests<span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-  <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> MICROALBUMIN</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ESR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE URINE EXAMINATION</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FASTING BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> POSTPRANDIAL BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HBA1C</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIPID PROFILE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIVER FUNCTION TEST</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ECG</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;5000</del>
-<h4>&#8377;2499</h4>
-<span class="discount">50% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<div class="col-md-6 col-lg-3 health-item" data-category="diabetic">
-<div class="modern-card">
-<span class="package-badge">Diabetic Checkup</span>
-<h5 class="fw-bold mt-2">Advanced</h5>
-<p class="small text-muted">13 Tests | 72 Parameters</p>
-
-<div class="accordion-wrapper">
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests<span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-  <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> MICROALBUMIN</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ESR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE URINE EXAMINATION</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FASTING BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> POSTPRANDIAL BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HBA1C</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIPID PROFILE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIVER FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> MICROALBUMIN</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN-D</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN B12</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ECG</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;7500</del>
-<h4>&#8377;3999</h4>
-<span class="discount">47% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<!-- kidney -->
-
-<div class="col-md-6 col-lg-3 health-item" data-category="kidney">
-<div class="modern-card">
-<span class="package-badge">KIDNEY HEALTH PACKAGES</span>
-<h5 class="fw-bold mt-2">Essential</h5>
-<p class="small text-muted">7 Tests | 28 Parameters</p>
-
-<div class="accordion-wrapper">
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests<span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-  <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE URINE EXAMINATION</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> RANDOM BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HBA1C ( GLYCOSYLATED HEMOGLOBIN)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ELECTROLYTES</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> URINE ALBUMIN-CREATININE RATIO</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ULTRASOUND ABDOMEN & PELVIS</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;5000</del>
-<h4>&#8377;2499</h4>
-<span class="discount">50% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<div class="col-md-6 col-lg-3 health-item" data-category="kidney">
-<div class="modern-card">
-<span class="package-badge">KIDNEY HEALTH PACKAGES</span>
-<h5 class="fw-bold mt-2">Advanced</h5>
-<p class="small text-muted">10 Tests | 60 Parameters</p>
-
-<div class="accordion-wrapper">
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests<span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-  <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE URINE EXAMINATION</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FASTING BLOOD SUGAR</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> HBA1C ( GLYCOSYLATED HEMOGLOBIN)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ELECTROLYTES</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> LIPID PROFILE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> GLOMERULAR FILTRATION RATE ( GFR)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> URINE ALBUMIN-CREATININE RATIO</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ULTRASOUND ABDOMEN & PELVIS</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;6000</del>
-<h4>&#8377;3499</h4>
-<span class="discount">42% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-<div class="col-md-6 col-lg-3 health-item" data-category="kidney">
-<div class="modern-card">
-<span class="package-badge">KIDNEY HEALTH PACKAGES</span>
-<h5 class="fw-bold mt-2">Kidney Stone</h5>
-<p class="small text-muted">8 Tests | 50 Parameters</p>
-
-<div class="accordion-wrapper">
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests<span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-  <li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE URINE EXAMINATION</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> KIDNEY FUNCTION TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> CALCIUM- SPOT URINE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> BICARBONATE</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> EGFR TEST</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> MAGNESIUM TEST -24 HRS URINE</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list"><li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ULTRASOUND KUB</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;5000</del>
-<h4>&#8377;2999</h4>
-<span class="discount">40% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-
-
-<!-- ================= THYROID CHECKUP ================= -->
-
-<!-- ESSENTIAL -->
-<div class="col-md-6 col-lg-3 health-item" data-category="thyroid">
-<div class="modern-card">
-<span class="package-badge">THYROID CHECKUP</span>
-<h5 class="fw-bold mt-2">ESSENTIAL</h5>
-<p class="small text-muted">5 Tests | 26 Parameters</p>
-
-<div class="accordion-wrapper">
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TOTAL TRIIODOTHYRONINE (T3)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TOTAL THYROXINE (T4)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TSH (THYROID STIMULATING HORMONE)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE (CBP)</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ULTRASOUND NECK</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;3500</del>
-<h4>&#8377;1999</h4>
-<span class="discount">43% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-
-
-<!-- ADVANCED -->
-<div class="col-md-6 col-lg-3 health-item" data-category="thyroid">
-<div class="modern-card">
-<span class="package-badge">THYROID CHECKUP</span>
-<h5 class="fw-bold mt-2">ADVANCED</h5>
-<p class="small text-muted">8 Tests | 29 Parameters</p>
-
-<div class="accordion-wrapper">
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TOTAL TRIIODOTHYRONINE (T3)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TOTAL THYROXINE (T4)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FREE T3</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FREE T4</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TSH (THYROID STIMULATING HORMONE)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE (CBP)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ANTI-THYROID PEROXIDASE ANTIBODY (ANTI-TPO)</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ULTRASOUND NECK</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;6500</del>
-<h4>&#8377;3499</h4>
-<span class="discount">46% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-
-
-<!-- TOTAL PACKAGE -->
-<div class="col-md-6 col-lg-3 health-item" data-category="thyroid">
-<div class="modern-card">
-<span class="package-badge">THYROID CHECKUP</span>
-<h5 class="fw-bold mt-2">TOTAL PACKAGE</h5>
-<p class="small text-muted">10 Tests | 31 Parameters</p>
-
-<div class="accordion-wrapper">
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Pathology Tests <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TOTAL TRIIODOTHYRONINE (T3)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TOTAL THYROXINE (T4)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FREE T3</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> FREE T4</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> TSH (THYROID STIMULATING HORMONE)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ANTI-THYROID PEROXIDASE ANTIBODY (ANTI-TPO)</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN D</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> VITAMIN B12</li>
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> COMPLETE BLOOD PICTURE (CBP)</li>
-</ul>
-</div>
-</div>
-
-<div class="accordion-item-custom">
-<div class="accordion-header-custom">Radiology <span>+</span></div>
-<div class="accordion-body-custom">
-<ul class="test-list">
-<li><span class="test-icon"><span class="test-icon"><i class="fa-solid fa-check"></i></span></span> ULTRASOUND NECK</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="price-section mt-3">
-<del>&#8377;9000</del>
-<h4>&#8377;4999</h4>
-<span class="discount">44% OFF</span>
-<button class="btn book-btn w-100 mt-2">Book Now</button>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-
-
- 
-
-<!-- ===== Membership Banner ===== -->
-<section class="membership-banner">
-  <div class="container">
-    <a class="btn cart-btn" data-test="Vitamin D">
-    <!-- Desktop Image -->
-    <img
-      src="images/banner/banner-desk-1.jpg"
-      alt="Membership Banner"
-      class="banner-desktop img-fluid"
-    />
-
-    <!-- Mobile Image -->
-    <img
-      src="images/banner/banner-mob-1.jpg"
-      alt="Membership Banner"
-      class="banner-mobile img-fluid"
-    />
-</a>
-  </div>
-</section>
-
-
+    
     
     <section id="about">
       <div class="container">
@@ -3761,30 +2138,33 @@ font-size:13px;
               <p class="section-subtitle">Experience you can trust, care you can feel</p>
             </div>
             <p>
-              At Vaarahi Diagnostics, we bring trusted healthcare expertise to Beeramguda with accurate, reliable, and timely diagnostic services. Our advanced laboratory technology and experienced medical professionals ensure precise test results with a patient-first approach. We offer comprehensive lab tests and health checkups designed to deliver clarity and peace of mind. Our mission is to combine modern diagnostics with compassionate care for a seamless healthcare experience.
+              At Vaarahi Diagnostics, we may be new to Beeramguda, but the expertise behind us is built on years of trusted healthcare experience. Our team is led by seasoned professionals who have dedicated their careers to serving patients with compassion and precision.
             </p>
-            
             <p>
+              We believe diagnostics is more than just running tests its about delivering clarity, trust, and peace of mind when you need it most. With advanced technology, skilled experts, and a patient-first approach, we ensure every test is conducted with the highest level of accuracy, efficiency, and care.
+            </p>
+            <p>
+              Our mission is simple: to combine modern medical innovation with personalized human care, so you feel supported at every step of your health journey.
             <ul class="bullets">
               <li>
-                 <i class="fas fa-bolt icon"></i>
+                <span style="font-size: 1.5em;">?</span>
                 <p>
                   <strong> Advanced Diagnostics
-                    Fast, accurate lab tests powered by modern diagnostic technology. Reliable results for confident medical decisions.
+                    We use the latest technology to deliver fast, highly accurate, and dependable results that empower better healthcare decisions.
                 </p>
               </li>
               <li>
-                <i class="fas fa-hospital icon"></i>
+                <span style="font-size: 1.5em;">??</span>
                 <p>
-                  <strong> Hi-Tech Laboratory
-                    State-of-the-art equipment meeting global quality standards. Precision-driven testing with safety and excellence.
+                  <strong> Next-Generation Laboratory
+                    Our hi-tech lab is equipped with world-class diagnostic systems, designed to meet international standards of quality, safety, and excellence.
                 </p>
               </li>
               <li>
-                 <i class="fas fa-heart icon"></i>
+                <span style="font-size: 1.5em;">??</span>
                 <p>
                   <strong> Compassionate Care
-                    Patient-first approach with empathy and respect. Smooth, stress-free diagnostic experience every visit.
+                    At Vaarahi, we treat every patient with empathy and respect, making your diagnostic journey smooth, stress-free, and supportive.
                 </p>
               </li>
             </ul>
@@ -3794,10 +2174,38 @@ font-size:13px;
       </div>
     </section>
     
+    <!-- Trust Section -->
+    <section id="trust-section" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="trust-content">
+              <h2 class="trust-title mb-4">
+                <span class="text-primary">The Name You Can Trust</span> 
+              </h2>
+              <h3 class="trust-subtitle mb-4">
+                Expert care, advanced diagnostics, right here in Beeramguda
+              </h3>
+              <p class="trust-description">
+                At Vaarahi Diagnostics, we believe that healthcare should be simple, accurate, and reassuring.
+                Every test is more than just a report; it's about your health, your clarity, and your peace of mind.
+                With advanced technology, empathetic staff, and timely reports, we make sure you always feel supported.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="trust-image">
+              <img src="<?php echo $siteurl; ?>images/about-vaarahi.jfif" alt="Vaarahi Diagnostics Trust" class="img-fluid rounded shadow">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section id="our_services" class="gray-bg">
       <div class="container">
         <div class="section-title mb-3 mb-xl-4">
-          <h2 class="h1" style="color: #ffffff;">Our Services</h2>
+          <h2 class="h1">Our Services</h2>
         </div>
         <div class="owl-carousel health-checkup-slider pt-3 pt-xl-2">
             
@@ -3891,7 +2299,7 @@ font-size:13px;
                     >ECG & TMT</a
                   >
                 </div>
-                <p>Reliable cardiac monitoring that keeps track of your heart's well-being.</p>
+                <p>Reliable cardiac monitoring that keeps track of your heart’s well-being.</p>
                 <a
                   href="<?php echo $siteurl; ?>#book-a-test"
                   class="readmore small"
@@ -4005,30 +2413,8 @@ font-size:13px;
       </div>
     </section>
 
-
    
 
-   
-<!-- ===== Membership Banner ===== -->
-<section class="membership-banner">
-  <div class="container">
-    <a  class="btn cart-btn" data-test="Scan Test" >
-    <!-- Desktop Image -->
-    <img
-      src="images/banner/banner-desk-2.jpg"
-      alt="Quick Imaging to visualize"
-      class="banner-desktop img-fluid"
-    />
-
-    <!-- Mobile Image -->
-    <img
-      src="images/banner/banner-mob-2.jpg"
-      alt="Quick Imaging to visualize"
-      class="banner-mobile img-fluid"
-    />
-</a>
-  </div>
-</section>
 
    
 
@@ -4043,7 +2429,7 @@ font-size:13px;
         <div class="col-lg-5 mb-4 mb-lg-0">
           <div class="ceo-image-wrapper">
             <div class="ceo-image">
-              <img src="<?php echo $siteurl; ?>images/anvesh-reddy.jpeg" 
+              <img src="<?php echo $siteurl; ?>images/anvesh-reddy.jfif" 
                    alt="Dr. Chandiri Anvesh Reddy - Consultant Radiologist" 
                    class="img-fluid"
                    loading="lazy">
@@ -4124,6 +2510,159 @@ font-size:13px;
   </div>
 </section>
 
+ <!-- Features Section -->
+    <section id="features-section" class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6 col-md-6">
+            <div class="feature-card h-100">
+              <div class="feature-icon">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <h4 class="feature-title">Technology You Can Rely On</h4>
+              <p class="feature-description">
+                From X-rays and CT scans to mammography and ultrasounds, we use modern,
+                high-precision machines that help doctors diagnose with confidence.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="feature-card h-100">
+              <div class="feature-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h4 class="feature-title">Care Beyond the Test</h4>
+              <p class="feature-description">
+                Our team creates a clean, hygienic, and comforting environment so you
+                feel safe and cared for at every step.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="feature-card h-100">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h4 class="feature-title">Reports That Don't Keep You Waiting</h4>
+              <p class="feature-description">
+                Quick digital delivery ensures you get accurate results faster, helping you
+                move forward with the right treatment without delay.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="feature-card h-100">
+              <div class="feature-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h4 class="feature-title">Your Local Healthcare Partner</h4>
+              <p class="feature-description">
+                No long travels or waiting in crowded centres. Vaarahi brings trusted
+                diagnostic care closer to your home in Beeramguda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="best-diagnostic" class="pt-0 pb-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="header-text-center">
+            Best Diagnostic Center in Hyderabad
+          </h1>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- How We Work Section -->
+    <section id="how-we-work" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">How We Work</h2>
+          <p class="section-subtitle">A simple journey designed around your comfort</p>
+          <p class="section-description">
+            We know medical tests can sometimes feel overwhelming. That's why we've made the process at Vaarahi Diagnostics
+            as easy and stress-free as possible. From booking to reports, every step is designed to give you convenience,
+            clarity, and care. Here's how it works:
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="process-step text-center">
+             
+              <div class="step-icon">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h4 class="step-title">Book Your Slot</h4>
+              <p class="step-description">
+                Choose what's easiest for you: a quick phone call or a few clicks online.
+                We make scheduling simple and flexible, so you don't have to worry about long waits.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="process-step text-center">
+             
+              <div class="step-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h4 class="step-title">Visit Us or Opt for Home Collection</h4>
+              <p class="step-description">
+                Whether you prefer walking into our centre or getting your samples collected from
+                the comfort of your home, the choice is yours. We value your time and convenience.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="process-step text-center">
+             
+              <div class="step-icon">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <h4 class="step-title">Get Tested with Care</h4>
+              <p class="step-description">
+                Our team ensures that every test is carried out in a hygienic, safe, and friendly environment.
+                We take the extra step to make you feel comfortable, whether it's a simple scan or a detailed check.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="process-step text-center">
+              
+              <div class="step-icon">
+                <i class="fas fa-file-medical"></i>
+              </div>
+              <h4 class="step-title">Receive Your Reports</h4>
+              <p class="step-description">
+                No waiting around. Once your tests are complete, you can access your reports digitally
+                on your phone or collect them directly from our centre, fast, accurate, and hassle-free.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <p class="process-note">
+            At every stage, we focus on making your experience smooth, empathetic, and reliable,
+            because diagnostics should bring peace of mind, not stress.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+
+    
+
+    
+
    <section id="about-two">
       <div class="container">
         <div class="row align-items-center">
@@ -4144,16 +2683,16 @@ font-size:13px;
               <div class="h1">Imaging</div>
             </div>
             <p>
-              Welcome to Vaarahi Diagnostics, At Vaarahi Diagnostics, we believe imaging is more than just a scan it's the window to clarity, precision, and confidence in your health journey. Located in the heart of Beeramguda, we bring you advanced diagnostic imaging services designed to deliver accurate answers when they matter most.
+              Welcome to Vaarahi Diagnostics, At Vaarahi Diagnostics, we believe imaging is more than just a scan — it’s the window to clarity, precision, and confidence in your health journey. Located in the heart of Hyderabad, we bring you advanced diagnostic imaging services designed to deliver accurate answers when they matter most.
             </p>
             <p>
               From Ultrasound to Mammography, X-Ray to Bone Mineral Density (BMD) testing, our wide range of services ensures that every aspect of your diagnostic needs is met under one roof. Each scan is backed by cutting-edge equipment, world-class standards, and the expertise of seasoned radiologists and technicians.
             </p>
             <p>
-              Step into our state-of-the-art imaging center, where technology meets compassionate care. Every detail from high-resolution imaging to interventional diagnostic procedures is tailored to provide you with results that are not only precise but also delivered with speed and reliability.
+              Step into our state-of-the-art imaging center, where technology meets compassionate care. Every detail — from high-resolution imaging to interventional diagnostic procedures — is tailored to provide you with results that are not only precise but also delivered with speed and reliability.
             </p>
             <p>
-              What sets Vaarahi apart is our patient-first philosophy: we don't just focus on images, we focus on the people behind them. With every scan, we aim to provide peace of mind, early detection, and better treatment outcomes.
+              What sets Vaarahi apart is our patient-first philosophy: we don’t just focus on images, we focus on the people behind them. With every scan, we aim to provide peace of mind, early detection, and better treatment outcomes.
             </p>
             
           </div>
@@ -4163,26 +2702,7 @@ font-size:13px;
     
 
 
-<!-- ===== Membership Banner ===== -->
-<section class="membership-banner">
-  <div class="container">
-    <a class="btn cart-btn" data-test="Kidney Test" >
-    <!-- Desktop Image -->
-    <img
-      src="images/banner/banner-desk-3.jpg"
-      alt="Membership Banner"
-      class="banner-desktop img-fluid"
-    />
 
-    <!-- Mobile Image -->
-    <img
-      src="images/banner/banner-mob-3.jpg"
-      alt="Membership Banner"
-      class="banner-mobile img-fluid"
-    />
-</a>
-  </div>
-</section>
     
 
 
@@ -4193,14 +2713,14 @@ font-size:13px;
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-5 pe-xl-5 d-none d-md-block">
                     <figure>
-                        <img src="images/contact-bg-new.webp" alt="Quick Enquiry" class="img-fluid">
+                        <img src="images/contact-bg-new.jpg" alt="Quick Enquiry" class="img-fluid">
                     </figure>
                 </div>
                 <div class="col-md-6 col-lg-7">
                     <div class="section-title mb-2">
-                        <div class="enquiry" style="font-size: 32px; color: #000000;">Quick Enquiry</div>
+                        <div class="h1">Quick Enquiry</div>
                     </div>
-                    <p>For general enquiries, please send us a message and we'll get right back to you.</p>
+                    <p>For general enquiries, please send us a message and we'll get right back to you. You can also call us directly to talk with a member of our customer care.</p>
                     <form action="" class="mt-4 pt-lg-2" onsubmit="submitForm(); return false;" method="post" autocomplete="off" id="dateForm">
                         <div class="form-group mb-2 mb-lg-3">
                            <input type="text" class="form-control" placeholder="Name" name="name" pattern="[a-zA-Z\s]*" maxlength="20" title="Only characters are allowed" required="" oninput="checkRepeatingCharacters(this)">
@@ -4235,8 +2755,6 @@ font-size:13px;
             </div>
         </div>
     </section>
-
-    
 
     <!-- Contact & Location Section -->
     <section id="contact-location" class="py-5 bg-primary text-white">
@@ -4306,8 +2824,6 @@ font-size:13px;
         </div>
       </div>
     </section>
-
-    
 
     <footer id="footer" class="p-0">
       
@@ -4412,7 +2928,7 @@ font-size:13px;
         <div
           class="container d-flex align-items-center justify-content-between"
         >
-          <p class="mb-0">Copyrights &copy; 2026 Vaarahi Diagnostics</p>
+          <p class="mb-0">Copyrights &copy; 2025 Vaarahi Diagnostics</p>
           <ul>
             <li>
               <a
@@ -4681,45 +3197,6 @@ font-size:13px;
   </div>
 </div>
 
-<!-- ===== Sticky Contact Button ===== -->
-<div id="stickyContactBtn">
-  
-</div>
-
-<!-- ===== Sticky Contact Form ===== -->
-<div id="stickyContactForm">
-  <div class="form-box">
-    
-    <div class="form-header">
-      <h3>Book your Test</h3>
-      <span id="closeForm"><i class="fas fa-xmark"></i></span>
-    </div>
-
-
-    <form id="bookingForm">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input 
-  type="tel"
-  name="phone"
-  id="phone"
-  placeholder="Phone Number"
-  maxlength="10"
-  required
-  pattern="[6-9][0-9]{9}"
-  title="Please enter valid 10 digit mobile number"
->
-      <input type="text" id="Requirement" name="service" readonly>
-
-      <button type="submit" id="submitBtn">
-  <span class="btn-text">Request Call Back <i class="fas fa-arrow-right"></i></span>
-  <span class="btn-loader" style="display:none;"></span>
-</button>
-    </form>
-
-  </div>
-</div>
-
-
 <style>
 /* Success animation styles */
 .success-animation {
@@ -4785,31 +3262,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const wrapper = document.getElementById("cardWrapper");
   const viewAllBtn = document.getElementById("viewAllBtn");
 
-$(".best-seller-slider").owlCarousel({
-  loop: true,
-  margin: 30,
-  nav: true,
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  autoplayHoverPause: true,
-  smartSpeed: 800,
+  let speed = 1;
 
-  navText: [
-    '<i class="fas fa-chevron-left"></i>',
-    '<i class="fas fa-chevron-right"></i>'
-  ],
+  function autoScroll() {
+    wrapper.scrollLeft += speed;
 
-  responsive: {
-  0: { items: 1 },
-  768: { items: 2 },
-  992: { items: 3 },
-  1200: { items: 4 } // ← shows 4 now
-}
-});
+    if (wrapper.scrollLeft >= wrapper.scrollWidth / 2) {
+      wrapper.scrollLeft = 0;
+    }
 
+    requestAnimationFrame(autoScroll);
+  }
 
-if (wrapper) {
+  autoScroll();
+
+  // Pause on hover
   wrapper.addEventListener("mouseenter", function () {
     speed = 0;
   });
@@ -4817,18 +3284,14 @@ if (wrapper) {
   wrapper.addEventListener("mouseleave", function () {
     speed = 1;
   });
-}
 
   // View All button
-if (viewAllBtn && wrapper) {
   viewAllBtn.addEventListener("click", function () {
     speed = 0;
     wrapper.style.overflowX = "visible";
     wrapper.style.flexWrap = "wrap";
     wrapper.style.justifyContent = "center";
   });
-}
-
 
 });
 
@@ -4952,254 +3415,9 @@ function checkRepeatingCharacters(input) {
           document.body.appendChild(containerPlaceholder);
         }
       });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        new Swiper(".swiper", {
-          loop: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-          }
-        });
-      });
-
-      const btn = document.getElementById("stickyContactBtn");
-const form = document.getElementById("stickyContactForm");
-const closeBtn = document.getElementById("closeForm");
-
-// open form
-btn.onclick = () => {
-  form.style.display = "flex";
-};
-
-// close form
-closeBtn.onclick = () => {
-  form.style.display = "none";
-};
-
-// close when clicking outside
-window.onclick = (e) => {
-  if(e.target === form){
-    form.style.display = "none";
-  }
-};
-
-// popup elements
-const contactForm = document.getElementById("stickyContactForm");
-const closeFormBtn = document.getElementById("closeForm");
-const careField = document.getElementById("Requirement");
-
-
-
-// open popup when BOOK NOW clicked (Cart buttons)
-document.querySelectorAll(".cart-btn").forEach(btn => {
-
-  btn.addEventListener("click", function() {
-
-    // get test name from button
-    const testName = this.getAttribute("data-test");
-
-    // show popup
-    contactForm.style.display = "flex";
-
-    // auto fill care requirement
-    if(careField && testName){
-      careField.value = testName ;
-    }
-
-  });
-
-});
-
-// close popup
-closeFormBtn.onclick = () => {
-  contactForm.style.display = "none";
-};
-
-// close when clicking outside
-window.onclick = (e) => {
-  if(e.target === contactForm){
-    contactForm.style.display = "none";
-  }
-};
-
-
-document.getElementById("bookingForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  const phone = document.getElementById("phone").value.trim();
-
-  const form = this;
-  const formData = new FormData(form);
-
-  const submitBtn = document.getElementById("submitBtn");
-  const btnText = submitBtn.querySelector(".btn-text");
-  const loader = submitBtn.querySelector(".btn-loader");
-
-  // 👉 disable button + show loader
-  submitBtn.disabled = true;
-  btnText.innerText = "Submitting...";
-  loader.style.display = "inline-block";
-
-  fetch("https://script.google.com/macros/s/AKfycbzCdCCE0yROMKFzz2oSBLZ9VAvZ777BTWKbYvg1skrTA0LheAIl6Elqnmq258NxYeU/exec", {
-    method: "POST",
-    body: formData
-  })
-  .then(response => response.json())
-  .then(data => {
-
-    if (data.status === "success") {
-       window.location.href = "https://vaarahidiagnostics.com/thankyou.php";
-      form.reset();
-      document.getElementById("stickyContactForm").style.display = "none";
-    } else {
-      alert("Error saving data");
-    }
-
-  })
-  .catch(error => {
-    console.error(error);
-    alert("Something went wrong");
-  })
-  .finally(() => {
-    // 👉 enable button + hide loader
-    submitBtn.disabled = false;
-    btnText.innerText = "Request Call Back →";
-    loader.style.display = "none";
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-  /* =========================
-     FILTER LOGIC
-  ========================== */
-
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  const healthItems = document.querySelectorAll(".health-item");
-
-  function showCategory(category) {
-    healthItems.forEach(item => {
-      item.style.display =
-        item.dataset.category === category ? "block" : "none";
-    });
-  }
-
-  showCategory("preventive");
-
-  filterButtons.forEach(btn => {
-    btn.addEventListener("click", function () {
-      filterButtons.forEach(b => b.classList.remove("active"));
-      this.classList.add("active");
-      showCategory(this.dataset.filter);
-    });
-  });
-
-
-  /* =========================
-     ACCORDION (EVENT DELEGATION)
-  ========================== */
-
-  document.addEventListener("click", function (e) {
-
-    const header = e.target.closest(".accordion-header-custom");
-    if (!header) return;
-
-    const item = header.closest(".accordion-item-custom");
-    const wrapper = header.closest(".accordion-wrapper");
-    const icon = header.querySelector("span");
-
-    // close others inside same card
-    wrapper.querySelectorAll(".accordion-item-custom").forEach(el => {
-      if (el !== item) {
-        el.classList.remove("active");
-        const sp = el.querySelector("span");
-        if (sp) sp.innerText = "+";
-      }
-    });
-
-    // toggle current
-    item.classList.toggle("active");
-
-    if (icon) {
-      icon.innerText = item.classList.contains("active") ? "-" : "+";
-    }
-  });
-
-
-  /* =========================
-     BOOK NOW POPUP
-  ========================== */
-
-  const contactForm = document.getElementById("stickyContactForm");
-  const careField = document.getElementById("Requirement");
-  const closeFormBtn = document.getElementById("closeForm");
-
-  document.querySelectorAll(".book-btn").forEach(button => {
-    button.addEventListener("click", function () {
-
-      const card = this.closest(".modern-card");
-      const title = card.querySelector("h5")?.innerText.trim() || "";
-
-      const item = this.closest(".health-item");
-      const category = item.dataset.category;
-
-      const filterBtn = document.querySelector(`.filter-btn[data-filter="${category}"]`);
-      const filterName = filterBtn ? filterBtn.innerText.trim() : "";
-
-      contactForm.style.display = "flex";
-
-      if (careField) {
-        careField.value = filterName + " - " + title;
-      }
-    });
-  });
-
-
-  /* =========================
-     POPULAR TEST BOOKING
-  ========================== */
-
-  document.querySelectorAll(".cart-btn").forEach(btn => {
-    btn.addEventListener("click", function () {
-      const testName = this.getAttribute("data-test");
-      contactForm.style.display = "flex";
-
-      if (careField && testName) {
-        careField.value = testName;
-      }
-    });
-  });
-
-
-  /* =========================
-     CLOSE POPUP
-  ========================== */
-
-  closeFormBtn.addEventListener("click", function () {
-    contactForm.style.display = "none";
-  });
-
-  window.addEventListener("click", function (e) {
-    if (e.target === contactForm) {
-      contactForm.style.display = "none";
-    }
-  });
-
-});
-
     </script>
     <script src="<?php echo $siteurl; ?>public/js/custom.js"></script>
     <script src="<?php echo $siteurl; ?>lp/includes/common.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   </body>
 </html>
